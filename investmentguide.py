@@ -8,4 +8,3 @@ even_list = return_even(original_list)
 
 st.write("Hello team, ready to start the project?")
 
-st.write(even_list)
