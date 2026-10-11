@@ -28,7 +28,7 @@ st.html("""
 with st.container(key="app_header"):
 
     # Place the title on the left and the information button on the right.
-    title, info = st.columns([10, 2])
+    title, info = st.columns([10, 2], vertical_alignment="center")
 
     with title:
         # Use a monochrome football icon.
