@@ -1,8 +1,8 @@
 import streamlit as st
 
 #import functions from feature_files
-from feature_01 import return_even
-from feature_02 import return_odd
+from feature_even_odd import return_even
+from feature_even_odd import return_odd
 
 #define functions
 original_list= [i for i in range(100)]
