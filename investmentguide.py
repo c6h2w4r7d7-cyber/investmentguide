@@ -7,8 +7,14 @@ st.set_page_config(
     layout="wide",
 )
 
-# Display the app name in green.
-st.title("⚽ :green[Football Betting Advisor]")
+# Display the title in a dark-green banner with white text.
+st.html("""
+<div style="background-color: #123D2A; padding: 24px; border-radius: 10px;">
+    <h1 style="color: white; margin: 0;">
+        ⚽ Football Betting Advisor
+    </h1>
+</div>
+""")
 
 # Explain the app's purpose.
 st.write(
@@ -20,6 +26,7 @@ st.write(
 
 # Separate the header from the league selection.
 st.divider()
+
 # Display the league selection section.
 st.subheader("Select a football league")
 
