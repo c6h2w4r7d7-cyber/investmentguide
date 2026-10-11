@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide",
 )
 
-# Set the header background to dark green and its text to white.
+# Define the header's appearance: colours, spacing and rounded corners.
 st.html("""
 <style>
 .st-key-app_header {
@@ -24,8 +24,8 @@ st.html("""
 </style>
 """)
 
-# Group the title and information button in one header.
-with st.container(key="app_header"):
+# Create and display the header with its title and information popup.
+with st.container(key="app_header"): # The key "app_header" connects this container to the styling above.
 
     # Place the title on the left and the information button on the right.
     title, info = st.columns([10, 2], vertical_alignment="center")
@@ -43,7 +43,7 @@ with st.container(key="app_header"):
                 "probabilities and compare them with Sporttip odds to assess "
                 "potential betting value."
             )
-            st.caption("Predictions cannot guarantee wins or profits.")
+            st.caption("Predictions cannot guarantee wins or profits.") #other text format
 
 # Separate the header from the league selection.
 st.divider()
