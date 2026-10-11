@@ -7,49 +7,19 @@ st.set_page_config(
     layout="wide",
 )
 
-# Fixed header.
-st.html("""
-<style>
-    .fcs-header {
-        position: fixed;
-        top: 3.75rem;
-        left: 0;
-        right: 0;
-        z-index: 999;
-        height: 110px;
-        box-sizing: border-box;
-        padding: 16px 24px;
-        background-color: #123D2A;
-        color: #FFFFFF;
-        border-bottom: 3px solid #36B878;
-    }
+# Display the app name in green.
+st.title("⚽ :green[Football Betting Advisor]")
 
-    .fcs-header-title {
-        margin: 0;
-        font-size: clamp(22px, 4vw, 32px);
-        font-weight: 700;
-        line-height: 1.3;
-    }
+# Explain the app's purpose.
+st.write(
+    "Explore upcoming football matches and compare both teams’ "
+    "recent performance. Our planned machine learning model will "
+    "estimate the chances of a home win, draw or away win and "
+    "compare them with Sporttip odds to identify potential betting value."
+)
 
-    .fcs-header-description {
-        margin-top: 6px;
-        font-size: 14px;
-        color: #DDEBE2;
-    }
-</style>
-
-<header class="fcs-header">
-    <div class="fcs-header-title">
-        ⚽ Football Betting Advisor
-    </div>
-    <div class="fcs-header-description">
-        Team performance, match predictions and Sporttip odds
-    </div>
-</header>
-
-<div style="height: 125px;"></div>
-""")
-
+# Separate the header from the league selection.
+st.divider()
 # Display the league selection section.
 st.subheader("Select a football league")
 
