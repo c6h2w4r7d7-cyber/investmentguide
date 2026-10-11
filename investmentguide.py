@@ -1,17 +1,17 @@
 import streamlit as st
 
-#import functions from feature_files
-from feature_even_odd import return_even
-from feature_even_odd import return_odd
+# Set the browser-tab title, icon and page layout.
+st.set_page_config(
+    page_title="Football Investment Advisor",
+    page_icon="⚽",
+    layout="wide",
+)
 
-#define functions
-original_list= [i for i in range(100)]
+# Display the app name.
+st.title("⚽ Football Betting Advisor")
 
-even_list = return_even(original_list)
-odd_list = return_odd(original_list)
-
-#code being written in streamlit
-st.write("Hello team, ready to start the project?")
-
-st.write(even_list)
-st.write(odd_list)
+# Explain the purpose of the app.
+st.write(
+  "Compare football team performance, match predictions "
+  "and Sporttip betting odds."  
+)
